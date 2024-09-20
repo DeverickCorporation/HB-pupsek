@@ -1,0 +1,74 @@
+.flyC {
+    position: relative;
+}
+
+.fly {
+    width: 100%;
+    height: 1000px;
+    transition: all 0.2s ease-out;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-image: url(../../assets/Last/fly.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0; /* Start at 0 opacity */
+}
+
+.flyC img {
+    width: 400px;
+    position: absolute;
+    left: 110px;
+    bottom: 150px;
+    transition: all 0.2s ease-out;
+    transform-origin: 50% 50%; /* Set transform origin to the center of the image */
+    z-index: 2;
+}
+
+.flyC img.big {
+    left: auto !important;
+    right: 90px !important;
+    width: 450px !important; 
+    transform-origin: 50% 50%; /* Set transform origin for the big image */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: 150px; */
+    /* height: 200px; */
+    margin-top: 280px;
+    transform: scale(1.3);
+
+}
+
+.grid img {
+    height: 1000px;
+    display: block;
+    width: 100%;
+    object-fit: fill;
+    opacity: 0;
+    transform: scale(0);
+    animation: popIn 4s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite; /* Зацикленная анимация */
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    20% {
+        opacity: 1;
+        transform: scale(1.2); /* Увеличение в середине */
+    }
+    90% {
+        opacity: 1;
+        transform: scale(1); /* Возвращение к обычному размеру */
+    }
+    100% {
+        opacity: 0; /* Снова исчезает к концу цикла */
+        transform: scale(0); /* Возвращается к изначальному состоянию */
+    }
+}
+

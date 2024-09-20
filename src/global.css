@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Ole&family=UnifrakturCook&family=Waiting+for+the+Sunrise&display=swap");
+@font-face {
+  font-family: 'BreitkopfFraktur';
+  src: url('./assets/BreitkopfFraktur.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.ole {
+  font-family: "Ole", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.love {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.waiting {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.unifraktur {
+  font-family: 'BreitkopfFraktur', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+    background-color: #ffe6e6;
+    padding: 80px 0;
+    padding-bottom: 2000px;
+}
+
+.App {
+  gap: 60px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.fit {
+  width: fit-content;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.font-120 {
+  font-size: 120px;
+}
+
+.font-80 {
+  font-size: 80px;
+}
+
+.font-40 {
+  font-size: 40px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.line-height-130 {
+  line-height: 130%;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.margin-top-60 {
+  margin-top: 60px;
+}
+
+.vitya {
+  width: 120px;
+  height: 120px;
+  /* right: 1061px;
+  bottom: 499px; */
+  transition: transform 0.2s ease-out;
+
+  /* right: 142px;
+  bottom: 289px; */
+}
+
+.screemer {
+  width: 2000px;
+  margin-left: -500px;
+  transition: margin-left 0.2s ease-out, width 1s ease-out;
+  flex-shrink: 0;
+  visibility: hidden;
+}
+
+.screemer.visible {
+  margin-left: 0px;
+  width: 30%;
+  visibility: visible;
+}

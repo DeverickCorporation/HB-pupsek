@@ -12,6 +12,7 @@ export default function Part2() {
   return (
     <div className={styles.part2}>
       <img src={img1}></img>
+      <p className={`waiting font-80 text-center margin-top-60 line-height-130`}>Спочатку робимо великий бізнес</p>
       <div className={styles.container}>
         <img src={g2}></img>
         <img src={g1}></img>

@@ -19,7 +19,7 @@ export default function Part1() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const startScroll = 2561.333251953125;
+  const startScroll = 2961.333251953125;
   const endScroll = 3294.666748046875;
   const startRight = 142;
   const startBottom = 289;

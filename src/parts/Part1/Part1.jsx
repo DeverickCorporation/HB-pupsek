@@ -21,8 +21,8 @@ export default function Part1() {
 
   const startScroll = 2961.333251953125;
   const endScroll = 3294.666748046875;
-  const startRight = 142;
-  const startBottom = 289;
+  const startRight = 207;
+  const startBottom = 162;
   const endRight = 1061;
   const endBottom = 499;
 

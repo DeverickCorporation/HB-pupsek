@@ -14,7 +14,7 @@ export default function Last() {
   const [rotation, setRotation] = useState(0);
   const [carPosition, setCarPosition] = useState(0);
   const s1 = 7700;
-  const s = 7100;
+  const s = 7500;
   const end = 8300;
   const startMove = 7700;
   const moveDistance = 400; // Distance the car will move across the screen
